@@ -1,0 +1,33 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "My Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Refun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.6.0",
+    "mongoose": "^6.3.4",
+    "sweetalert2": "^11.4.15"
+  },
+  "configurations": [
+    {
+      "command": "refun",
+      "name": "Refun",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Launch Chrome against localhost",
+      "url": "http://localhost:27017",
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
